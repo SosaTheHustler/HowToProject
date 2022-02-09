@@ -7,7 +7,7 @@ const ShowPosts = () => {
   const [Posts, setPosts] = useState([]);
 
   const fetchPosts = async () => {
-    const result = await axios.get("http://localhost:8000/api/");
+    const result = await axios.get("https://howtobackendapi.herokuapp.com/api/");
 
     console.log(result.data);
     setPosts(result.data);
