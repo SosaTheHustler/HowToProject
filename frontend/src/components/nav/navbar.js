@@ -22,7 +22,7 @@ const Navbar = () => {
   useEffect(() => {
     if (localStorage.getItem("token") === null) {
     } else {
-      fetch("http://127.0.0.1:8000/api/v1/users/auth/user/", {
+      fetch("https://howtobackendapi.herokuapp.com/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
