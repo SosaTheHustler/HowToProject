@@ -22,7 +22,7 @@ const PostDetail = () => {
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://127.0.0.1:8000/api/${id}/`);
+    await axios.delete(`https://howtobackendapi.herokuapp.com/${id}/`);
     history.push("/");
   };
 
