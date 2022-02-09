@@ -5,7 +5,7 @@ export function Counter() {
   const [posts, setPosts] = useState([]);
 
   const getPosts = async () => {
-    const response = await axios.get("http://localhost:8000/api/");
+    const response = await axios.get("https://howtobackendapi.herokuapp.com/api/");
     console.log(response.data);
     setPosts(response.data);
   };
